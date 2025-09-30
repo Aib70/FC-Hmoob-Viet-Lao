@@ -1,0 +1,122 @@
+:root{
+  --card:#ffffff;
+  --accent:#2563eb;
+  --shadow: 0 8px 20px rgba(0,0,0,0.3);
+  --radius:12px;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+body{
+  margin:0;
+  padding:40px 20px;
+  color:#1f2937;
+  background:url(Nhan.jpg) no-repeat center center fixed;
+  background-size:cover;
+  position:relative;
+}
+.overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.35);
+  z-index:-1;
+}
+.container{
+  max-width:1600px;
+  margin:0 auto;
+}
+h1{
+  text-align:center;
+  font-size:50px;
+  margin-bottom:40px;
+  color:#ffffff;
+  text-shadow:2px 2px 6px rgba(6, 234, 6, 0.674);
+}
+.grid{
+  display:grid;
+  gap:12px;
+  margin-bottom:30px;
+}
+.grid-6{
+  grid-template-columns:repeat(6, 1fr);
+}
+.grid-9{
+  grid-template-columns:repeat(9, 1fr);
+}
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+  transition:transform 0.3s, box-shadow 0.3s;
+  cursor:pointer;
+}
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}
+.card img{
+  width:120%;
+  height:200px;
+  object-fit:cover;
+  display:block;
+}
+.card.small img{
+  height:200px;
+}
+.info{
+  padding:10px;
+  text-align:center;
+  background:linear-gradient(to bottom,#ffffff,#f9fafb);
+}
+.name{
+  font-weight:700;
+  font-size:15px;
+  margin-bottom:3px;
+  color:#111827;
+}
+.role{
+  font-size:12px;
+  color:#6b7280;
+}
+.header {
+  text-align: center;
+  padding: 20px;
+}
+.header h1 {
+  margin-bottom: 5px; /* Giảm khoảng cách dưới tiêu đề */
+  line-height: 1.2;   /* Thu hẹp khoảng cách trong dòng */
+}
+
+.header .subtitle {
+  margin-top: 4;      /* Bỏ khoảng cách trên của subtitle */
+  line-height: 1.2;
+  color:#a0ca09e9;
+  text-shadow:2px 2px 6px rgba(234, 6, 204, 0.674);
+}
+
+.title-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* khoảng cách giữa 3 cột */
+}
+
+.left-col, .right-col {
+  font-size: 20px;
+  font-weight: bold;
+  color: yellow;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.title-row h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 5px green;
+  margin: 0;
+}
+.header .subtitle {
+  font-size: 24px;   /* Tăng cỡ chữ, ví dụ 24px */
+  font-weight: bold; /* In đậm nếu muốn */
+  margin-top: 0;     /* Giữ khoảng cách nhỏ với h1 */
+}
